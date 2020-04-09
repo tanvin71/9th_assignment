@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans&display=swap');
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/**** header starts -----****/
+.navbar-light .navbar-nav .nav-link {
+    color: #33417c;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+/**** bannner starts -----****/
+.banner {
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    
+}
+.hg {
+  min-height: 100vh;  
+}
+.hg h1 {
+    font-size: 60px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.icon {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 50px;
+    animation: up-down 2s infinite linear;  
+    animation-direction: alternate;
+}
+@keyframes up-down {
+    0% {
+        transform: translateY(0)
+    }
+    100% {
+        transform: translateY(-150px)
+    }
+}
+/**** bannner ends -----****/
+/**** who we are starts -----****/
+.who-we-are {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+/* .heading span {
+    display: block;
+    height: 5px;
+    width: 60px;
+    background: #e76128;
+} */
+.heading {
+    margin-top: 50px;
+}
+.heading h2 {
+    color: #33417c;
+    text-transform: uppercase; 
+    font-size: 30px; 
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    font-weight: 700; 
+}
+.heading h2::before {
+    content:'';
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    background: #e76128;
+    transition: .5s all ease-in-out;
+}
+.heading:hover h2::before{
+    width: 10%;
+}
+.whoweare-content {
+
+}
+.whoweare-content p {
+    color: #bab5b2;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+/**** who we are ends -----****/
+/**** what we do starts -----****/
+.what-we-do {
+    background: #fbfbfb;
+    padding: 50px 0;
+    background-image: url(../images/banner1.png);
+    background-repeat: no-repeat;
+    background-size: 890px;
+    background-position: right bottom;
+}
+.what-we-do .heading-1 {
+    padding-bottom: 80px;
+}
+.heading-1 h2 {
+    color: #33417c;
+    text-transform: uppercase; 
+    font-size: 30px; 
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    font-weight: 700;
+}
+.heading-1 h2::before {
+    content:'';
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    top: 0;
+    left: 50%;
+    background: #e76128;
+    transition: .5s all ease-in-out;
+    transform: translateX(-50%);
+}
+.heading-1:hover h2::before{
+    width: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.what {
+    position: relative;
+}
+.what::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    transition: .4s all ease-in-out;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8d7bae+0,3b1b75+100&0+1,1+100 */
+background: -moz-linear-gradient(top,  rgba(141,123,174,0) 0%, rgba(140,122,173,0) 1%, rgba(59,27,117,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(141,123,174,0) 0%,rgba(140,122,173,0) 1%,rgba(59,27,117,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(141,123,174,0) 0%,rgba(140,122,173,0) 1%,rgba(59,27,117,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008d7bae', endColorstr='#3b1b75',GradientType=0 ); /* IE6-9 */
+
+}
+.what:hover::before {
+    height: 100%;
+    
+}
+.whatwe {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-transform: uppercase; 
+    text-align: center;
+    opacity: 0; 
+    transition: .8s all ease-in-out;
+}
+.what:hover .whatwe {
+    opacity: 1;
+    left: 50%
+}
+
+.whatwe h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px; 
+    line-height: 1.5;
+}
+.arrow {
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    transform: translate(-50%, -80%);
+    opacity: 0;
+    transition: .8s all ease-in-out;
+}
+.what:hover .arrow {
+    opacity: 1;
+    left: 50%;
+}
+.arrow i {
+    font-size: 20px;
+    color:#ffffff;
+    text-align: center;  
+}
+.h4-2 {
+    width: 228px;
+}
+.h4-3 {
+    /* width: 200px; */
+}
+/**** what we do ends -----****/
+
+/**** our attorneys starts -----****/
+
+.our-attorneys {
+    background-image: url(../images/banner2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+.hgt {
+    padding: 100px 0;
+}
+.hgt .heading {
+    padding-top: 100px;
+}
+.our-attorneys h2 {
+    color: #ffffff;
+}
+.our-attorneys-content p {
+    color: #a3a0cc;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
+ span {
+    display: inline-block;
+    color: #e76128;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+
+}
+.attorneys-image {
+    position: relative;
+    margin: 15px 0;
+}
+
+.attorneys-image::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    transition: .4s all ease-in-out;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8d7bae+0,3b1b75+100&0+1,1+100 */
+background: -moz-linear-gradient(top,  rgba(141,123,174,0) 0%, rgba(140,122,173,0) 1%, rgba(59,27,117,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(141,123,174,0) 0%,rgba(140,122,173,0) 1%,rgba(59,27,117,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(141,123,174,0) 0%,rgba(140,122,173,0) 1%,rgba(59,27,117,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008d7bae', endColorstr='#3b1b75',GradientType=0 ); /* IE6-9 */
+
+}
+.attorneys-image:hover::before {
+    height: 100%;
+
+}
+
+.attorneys-content {
+    color: #ffffff;
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    transform: translate(-10%, -20%);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    transition: .4s all ease-in-out;
+}
+
+.attorneys-image:hover .attorneys-content {
+    opacity: 1;
+    transform: translate(-10%, 0%);
+} 
+
+.attorneys-content h4 {
+    
+}
+/**** our attorneys ends -----****/
+/**** language section starts -----****/
+.language {
+    margin-top: 100px;
+}
+.language-content{
+    margin: 80px 0;
+}
+.language-content h4 {
+    color: #36226f;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+}
+.language-content p {
+    font-family: 'Open Sans', sans-serif;
+    color:#bab5b3;
+    font-size: 12px; 
+}
+/**** language section ends -----****/
+/**** contact section starts -----****/
+.contact {
+    background: #36226f;
+    padding: 50px 0;
+}
+.contact h2 {
+    color: #FFFFFF;
+    font-size: 25px;
+}
+form {
+    text-align: center;
+}
+.form-group {
+
+}
+.form-group input::placeholder {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+
+}
+.form-group input[type="text"] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #564a98;
+    border-radius: 0;
+    padding-left: 0;
+    
+}
+.form-group input[type="email"] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #564a98;
+    border-radius: 0;
+    padding-left: 0;
+    
+}
+.form-group textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #564a98;
+    border-radius: 0;
+    padding-left: 0;
+}
+.form-group textarea::placeholder {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+.btn-custom {
+    background: #e76128;
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-top: 15px;
+
+}
+
+/**** contact section ends -----****/
+/**** footer section starts -----****/
+footer {
+    background: #16102b;
+}
+footer p {
+    color: #6c64a0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+li {
+    list-style: none; 
+}
+a {
+    color: #ffffff;
+}
+.fg {
+    height: 100px;
+}
+/**** footer section ends -----****/
